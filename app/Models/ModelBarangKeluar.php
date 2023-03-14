@@ -28,4 +28,11 @@ class ModelBarangKeluar extends Model
                 ->get();
         }
     }
+    public function laporanPerPeriode($tglawal, $tglakhir)
+    {
+        return $this->table('barangkeluar')
+            ->where('tglfaktur >=', $tglawal)
+            ->where('tglfaktur <=', $tglakhir)
+            ->get();
+    }
 }

@@ -108,6 +108,12 @@
                            <p class="text">Laporan</p>
                         </a>
                      </li>
+                     <li class="nav-item">
+                        <a href="<?= site_url('utility/index'); ?>" class="nav-link">
+                           <i class="nav-icon fas fa-file text-danger"></i>
+                           <p class="text">Utility</p>
+                        </a>
+                     </li>
                   <?php endif; ?>
                   <?php if (session()->idlevel == 3) : ?>
                      <li class="nav-header">Transaksi</li>

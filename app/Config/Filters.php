@@ -37,7 +37,7 @@ class Filters extends BaseConfig
     public $globals = [
         'before' => [
             // 'honeypot',
-            // 'csrf',
+            'csrf',
             // 'invalidchars',
             'filterAdmin'   => [
                 'except'    => ['login/*', 'login', '/']
@@ -61,6 +61,7 @@ class Filters extends BaseConfig
                     'barangkeluar/*',
                     'pelanggan/*',
                     'laporan/*',
+                    'utility/*',
                 ]
             ],
             'filterGudang'   => [
